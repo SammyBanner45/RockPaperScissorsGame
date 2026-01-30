@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  font-family: Arial, sans-serif;
+  background-color: rgb(9, 4, 67);
+}
+#play {
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+#play > .buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 20px;
+    
+
+}
+
+#play button {
+  height: 100px;
+  width: 100px;
+  font-size: 32px;
+  cursor: pointer;
+  background-color: yellow;
+  margin: 10px;
+  
+}
+
+
+#play > #reset {
+  width: 300px;
+  height: 50px;
+  background-color: orange;
+font-family: sans-serif;
+color: red;
+}
+
+.score {
+  position: absolute;
+  top: 42%; 
+  left: 50%;
+  transform: translateX(-50%);
+  
+  background-color: whitesmoke;
+  width: 250px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  z-index: 10;
+  margin: 10px;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+    color: aliceblue;
+    margin: 30px;
+}
+#arena{
+    background-image: url(arena.png);
+   display: flex;
+
+   background-size: cover;
+    justify-content: center;
+    height:30vh; 
+    width: auto;
+    border: 1px solid #ccc;
+    margin: 30px;
+}
