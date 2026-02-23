@@ -71,16 +71,16 @@ function play(playerMove) {
     if (playerScore === 5) result += "\n🔥 YOU WON THE GAME!";
     if (compScore === 5) result += "\n💀 COMPUTER WON THE GAME!";
 
-    document.getElementById("result").innerText =
-        `You: ${playerMove} | Computer: ${compMove}
-${result}
-Score → You: ${playerScore} | Computer: ${compScore}`;
+    document.getElementById("player-score").innerText = playerScore;
+    document.getElementById("comp-score").innerText = compScore;
+    document.getElementById("result").innerText = result;
 }
 
 function resetGame() {
     playerScore = 0;
     compScore = 0;
     document.getElementById("arena").innerHTML = "";
-    document.getElementById("result").innerText =
-        "Game reset 🔄\nScore → You: 0 | Computer: 0";
+    document.getElementById("player-score").innerText = "0";
+    document.getElementById("comp-score").innerText = "0";
+    document.getElementById("result").innerText = "Choose your weapon!";
 }

@@ -2,6 +2,9 @@
 <html>
 <head>
   <title>Rock Paper Scissors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,8 +25,20 @@
   <button id="reset" onclick="resetGame()">Reset</button>
 
 </div>
-<div class="score">
-  <p id="result"></p></div>
+<div class="score-container">
+  <div class="score-board">
+    <div class="player-col">
+      <div class="tag">YOU</div>
+      <div class="score-box" id="player-score">0</div>
+    </div>
+    <div class="vs-badge">VS</div>
+    <div class="comp-col">
+      <div class="tag">COM</div>
+      <div class="score-box" id="comp-score">0</div>
+    </div>
+  </div>
+  <div class="match-status" id="result">Choose your weapon!</div>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="script.js"></script>
 </body>
